@@ -1,0 +1,5 @@
+name: Anime Dual Audio
+description: Detects Eng+Jpn or Dual Audio releases.
+patterns:
+  include:
+    - '(Dual[ ._-]?Audio|Eng\+Jpn|Multi[ ._-]?Audio)'

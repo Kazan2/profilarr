@@ -1,0 +1,9 @@
+name: 10-bit
+description: Detects 10-bit encodes.
+specifications:
+  - name: 10-bit flag
+    implementation: ReleaseTitleSpecification
+    negate: false
+    required: true
+    fields:
+      value: '\b10[- ]?bit\b'

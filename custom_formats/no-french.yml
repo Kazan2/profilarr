@@ -1,0 +1,9 @@
+name: No French
+description: Deprioritize French releases.
+specifications:
+  - name: French tag
+    implementation: ReleaseTitleSpecification
+    negate: false
+    required: true
+    fields:
+      value: '(\bFrench\b)'

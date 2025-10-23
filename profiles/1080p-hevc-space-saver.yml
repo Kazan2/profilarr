@@ -1,0 +1,29 @@
+name: 1080p HEVC (Space Saver)
+description: >
+  Balanced 1080p HEVC/x265 Radarr profile optimized for space savings with fallback to 720p/480p.
+tags: [hevc, x265, radarr]
+upgradesAllowed: true
+minCustomFormatScore: 0
+upgradeUntilScore: 60
+minScoreIncrement: 10
+custom_formats:
+  - { name: HEVC / x265, score: 50 }
+  - { name: 10-bit, score: 20 }
+  - { name: Small Encode Groups, score: 25 }
+  - { name: Avoid x264, score: -50 }
+  - { name: No HDR, score: -10 }
+  - { name: No French, score: -100 }
+  - { name: No German, score: -100 }
+  - { name: No 3D, score: -100 }
+  - { name: No Extras, score: -100 }
+qualities:
+  - { id: 6, name: Bluray-1080p }
+  - { id: 5, name: WEBDL-1080p }
+  - { id: 4, name: WEBRip-1080p }
+  - { id: 3, name: Bluray-720p }
+  - { id: 2, name: WEBDL-720p }
+  - { id: 0, name: WEBDL-480p }
+upgrade_until:
+  id: 6
+  name: Bluray-1080p
+language: English

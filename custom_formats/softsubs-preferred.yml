@@ -1,0 +1,9 @@
+name: Softsubs Preferred
+description: Detects softsubbed releases (ASS/SUB).
+specifications:
+  - name: Softsub tags
+    implementation: ReleaseTitleSpecification
+    negate: false
+    required: true
+    fields:
+      value: '(Softsub|ASS|Subbed)'

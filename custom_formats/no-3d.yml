@@ -1,0 +1,9 @@
+name: No 3D
+description: Deprioritize 3D releases.
+specifications:
+  - name: 3D tag
+    implementation: ReleaseTitleSpecification
+    negate: false
+    required: true
+    fields:
+      value: '(\b3D\b)'

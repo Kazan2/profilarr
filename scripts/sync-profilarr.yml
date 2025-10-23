@@ -1,0 +1,5 @@
+name: Sync Profilarr Repository
+description: Use Profilarr's built-in sync or API call to refresh this database.
+steps:
+  - name: Sync
+    run: echo "Use Profilarr UI or API to sync Austitious Edition."

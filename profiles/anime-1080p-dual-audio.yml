@@ -1,0 +1,30 @@
+name: Anime 1080p Dual Audio (HEVC)
+description: >
+  Dual-audio 1080p anime profile optimized for HEVC/x265 encodes with Multi (Eng+Jpn) language.
+tags: [anime, hevc, dual-audio, sonarr]
+upgradesAllowed: true
+minCustomFormatScore: 0
+upgradeUntilScore: 70
+minScoreIncrement: 10
+custom_formats:
+  - { name: HEVC / x265, score: 50 }
+  - { name: 10-bit, score: 20 }
+  - { name: Dual Audio, score: 100 }
+  - { name: Softsubs Preferred, score: 10 }
+  - { name: Avoid x264, score: -50 }
+  - { name: No French, score: -100 }
+  - { name: No German, score: -100 }
+  - { name: No 3D, score: -100 }
+  - { name: No Extras, score: -100 }
+  - { name: No HDR, score: -10 }
+qualities:
+  - { id: 6, name: Bluray-1080p }
+  - { id: 5, name: WEBDL-1080p }
+  - { id: 4, name: WEBRip-1080p }
+  - { id: 3, name: Bluray-720p }
+  - { id: 2, name: WEBDL-720p }
+  - { id: 0, name: WEBDL-480p }
+upgrade_until:
+  id: 6
+  name: Bluray-1080p
+language: Multi (Eng+Jpn)

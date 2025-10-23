@@ -1,0 +1,9 @@
+name: No German
+description: Deprioritize German releases.
+specifications:
+  - name: German tag
+    implementation: ReleaseTitleSpecification
+    negate: false
+    required: true
+    fields:
+      value: '(\bGerman\b)'

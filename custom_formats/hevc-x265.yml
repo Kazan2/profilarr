@@ -1,0 +1,9 @@
+name: HEVC / x265
+description: Detects x265 or HEVC releases.
+specifications:
+  - name: x|h265 or HEVC
+    implementation: ReleaseTitleSpecification
+    negate: false
+    required: true
+    fields:
+      value: '[xh][ ._-]?265|\bHEVC(\b|\d)'

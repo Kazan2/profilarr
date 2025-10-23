@@ -1,0 +1,9 @@
+name: No Extras
+description: Deprioritize Extras releases.
+specifications:
+  - name: Extras tag
+    implementation: ReleaseTitleSpecification
+    negate: false
+    required: true
+    fields:
+      value: '(\bExtras\b)'
