@@ -1,12 +1,14 @@
 ---
+# HEVC / x265 Custom Format
 name: hevc-x265
-description: Matches HEVC/x265 releases via regex pattern "hevc-x265".
+description: Matches HEVC or x265 encodes based on regex pattern reference.
 tags:
-- Codec
+  - Codec
+  - Video
 conditions:
-- name: HEVC or x265
-  type: release_title
-  required: true
-  negate: false
-  pattern: hevc-x265
+  - name: HEVC or x265
+    type: release_title
+    required: true
+    negate: false
+    pattern: hevc-x265
 tests: []
