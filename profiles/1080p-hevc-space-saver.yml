@@ -1,5 +1,6 @@
+---
 name: 1080p HEVC (Space Saver)
-description: >
+description: |
   Balanced 1080p HEVC/x265 profile optimized for space savings.
   - Targets 1080p Bluray/WEB HEVC
   - Falls back to 720p and 480p
