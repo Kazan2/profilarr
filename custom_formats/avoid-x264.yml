@@ -1,3 +1,4 @@
+---
 name: Avoid x264
 description: Filters out x264 encodes in favor of x265.
 specifications:

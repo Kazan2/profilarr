@@ -1,3 +1,4 @@
+---
 name: 10-bit
 description: Detects 10-bit encodes.
 specifications:

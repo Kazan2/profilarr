@@ -1,3 +1,4 @@
+---
 name: Anime Dual Audio
 description: Detects Eng+Jpn or Dual Audio releases.
 patterns:

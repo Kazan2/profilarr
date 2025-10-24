@@ -1,3 +1,4 @@
+---
 name: Sync Profilarr Repository
 description: Use Profilarr's built-in sync or API call to refresh this database.
 steps:

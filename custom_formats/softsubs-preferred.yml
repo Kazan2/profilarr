@@ -1,3 +1,4 @@
+---
 name: Softsubs Preferred
 description: Detects softsubbed releases (ASS/SUB).
 specifications:

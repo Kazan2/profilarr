@@ -1,3 +1,4 @@
+---
 name: Exclusions
 description: Negative filters for unwanted tags.
 patterns:

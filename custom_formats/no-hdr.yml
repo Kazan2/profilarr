@@ -1,3 +1,4 @@
+---
 name: No HDR
 description: Prefer SDR releases instead of HDR for space efficiency.
 specifications:

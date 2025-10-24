@@ -1,3 +1,4 @@
+---
 name: HEVC / x265
 description: Detects x265 or HEVC releases.
 specifications:

@@ -1,3 +1,4 @@
+---
 name: Dual Audio
 description: Detects English+Japanese or Multi Audio releases.
 specifications:
