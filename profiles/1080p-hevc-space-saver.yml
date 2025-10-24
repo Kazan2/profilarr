@@ -1,29 +1,84 @@
 name: 1080p HEVC (Space Saver)
 description: >
-  Balanced 1080p HEVC/x265 Radarr profile optimized for space savings with fallback to 720p/480p.
-tags: [hevc, x265, radarr]
+  Balanced 1080p HEVC/x265 profile optimized for space savings.
+  - Targets 1080p Bluray/WEB HEVC
+  - Falls back to 720p and 480p
+  - Avoids UHD, Remux, BR-DISK, 3D, HDR, and foreign audio releases.
+tags:
+  - hevc
+  - x265
+  - 1080p
+  - space-saving
+  - radarr
 upgradesAllowed: true
 minCustomFormatScore: 0
-upgradeUntilScore: 60
-minScoreIncrement: 10
+upgradeUntilScore: 60000
+minScoreIncrement: 1
+
 custom_formats:
-  - { name: HEVC / x265, score: 50 }
-  - { name: 10-bit, score: 20 }
-  - { name: Small Encode Groups, score: 25 }
-  - { name: Avoid x264, score: -50 }
-  - { name: No HDR, score: -10 }
-  - { name: No French, score: -100 }
-  - { name: No German, score: -100 }
-  - { name: No 3D, score: -100 }
-  - { name: No Extras, score: -100 }
+  - name: HEVC / x265
+    score: 50000
+  - name: 10-bit
+    score: 20000
+  - name: Small Encode Groups
+    score: 15000
+  - name: Avoid x264
+    score: -50000
+  - name: No HDR
+    score: -10000
+  - name: No French
+    score: -100000
+  - name: No German
+    score: -100000
+  - name: No 3D
+    score: -100000
+  - name: No Extras
+    score: -100000
+
+custom_formats_radarr:
+  - name: HEVC Priority
+    score: 20000
+  - name: Compact Encoders
+    score: 10000
+  - name: Avoid BR-DISK
+    score: -999999
+
 qualities:
-  - { id: 6, name: Bluray-1080p }
-  - { id: 5, name: WEBDL-1080p }
-  - { id: 4, name: WEBRip-1080p }
-  - { id: 3, name: Bluray-720p }
-  - { id: 2, name: WEBDL-720p }
-  - { id: 0, name: WEBDL-480p }
+  - id: -1
+    name: Efficient 1080p
+    description: 1080p Bluray/WEB HEVC sources
+    qualities:
+      - id: 10
+        name: Bluray-1080p
+      - id: 9
+        name: WEBDL-1080p
+      - id: 11
+        name: WEBRip-1080p
+  - id: -2
+    name: 720p Fallback
+    description: Fallback tier for 720p encodes
+    qualities:
+      - id: 13
+        name: Bluray-720p
+      - id: 14
+        name: WEBDL-720p
+      - id: 15
+        name: WEBRip-720p
+  - id: -3
+    name: SD Fallback
+    description: Standard definition fallback
+    qualities:
+      - id: 18
+        name: Bluray-480p
+      - id: 19
+        name: WEBDL-480p
+      - id: 20
+        name: WEBRip-480p
+      - id: 22
+        name: DVD
+
 upgrade_until:
-  id: 6
-  name: Bluray-1080p
+  id: -1
+  name: Efficient 1080p
+  description: 1080p Bluray/WEB HEVC target
 language: English
