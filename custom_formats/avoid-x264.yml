@@ -1,0 +1,13 @@
+---
+name: avoid-x264
+description: Deprioritize AVC/x264 releases in favor of HEVC/x265. Uses regex "x264".
+tags:
+- Codec
+- Exclusion
+conditions:
+- name: x264 marker
+  type: release_title
+  required: true
+  negate: false
+  pattern: x264
+tests: []

@@ -1,0 +1,28 @@
+---
+name: Dual Audio
+pattern: (?i)\b((multi[^a-zA-Z]*)|(dual[\s\.\-](audio|complete)))\b
+description: Detects dual-audio releases that include both English and another language (typically Japanese for anime).
+tags:
+- Audio
+- Language
+- DualAudio
+tests:
+- expected: true
+  id: 1
+  input: Attack on Titan S04 1080p BluRay Dual Audio x265 DDP5.1
+  matchedContent: Dual Audio
+  passes: true
+- expected: true
+  id: 2
+  input: Bleach.S12.1080p.BluRay.REMUX.AVC.Dual-Audio.DTS-HD.MA.2.0-ZR-
+  matchedContent: Dual-Audio
+  passes: true
+- expected: true
+  id: 3
+  input: DanMachi Sword Oratoria Vol 01-04 2017 ANiME DUAL COMPLETE BLURAY-iFPD
+  matchedContent: DUAL COMPLETE
+  passes: true
+- expected: false
+  id: 4
+  input: Dual.2022.1080p.BluRay.DDP5.1.x264-iFT
+  passes: true

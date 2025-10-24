@@ -1,7 +1,9 @@
 ---
-name: Dual Audio
-description: Matches dual audio releases (Eng + Jpn).
-tags: [Audio, Language]
+name: dual-audio
+description: Matches dual-audio (Eng+Jpn) via regex pattern "Dual Audio".
+tags:
+- Audio
+- Language
 conditions:
 - name: Dual Audio
   type: release_title

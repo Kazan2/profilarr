@@ -1,0 +1,13 @@
+---
+name: no-german
+description: Deprioritize German-tagged releases for English-first libraries.
+tags:
+- Exclusion
+- Language
+conditions:
+- name: German keywords
+  type: release_title
+  required: true
+  negate: false
+  pattern: no-german
+tests: []

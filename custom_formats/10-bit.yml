@@ -1,7 +1,8 @@
 ---
 name: 10-bit
-description: Matches 10-bit encodes.
-tags: [BitDepth]
+description: Matches 10-bit encodes via regex pattern "10-bit".
+tags:
+- BitDepth
 conditions:
 - name: 10-bit
   type: release_title

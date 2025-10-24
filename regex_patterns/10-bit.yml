@@ -1,15 +1,22 @@
 ---
 name: 10-bit
-pattern: (?i)10[-\s]?bit
-description: Detects 10-bit encodes.
-tags: [BitDepth]
+pattern: (?i)\b(10[\s\-]?bit)\b
+description: Detects 10-bit video encodes, preferred for higher color depth and efficiency.
+tags:
+- BitDepth
+- Video
 tests:
 - expected: true
   id: 1
-  input: Dune (2021) 1080p BluRay HEVC 10bit DDP 5.1
+  input: Dune 2021 1080p BluRay x265 10bit DDP 5.1
   matchedContent: 10bit
   passes: true
-- expected: false
+- expected: true
   id: 2
-  input: The Batman (2022) 1080p WEB-DL x265 SDR
+  input: The Batman 2022 1080p WEB-DL HEVC 10-bit
+  matchedContent: 10-bit
+  passes: true
+- expected: false
+  id: 3
+  input: Avatar 2009 1080p BluRay x265 8bit DTS 5.1
   passes: true

@@ -1,0 +1,12 @@
+---
+name: no-extras
+description: Exclude bonus/supplementary content (featurettes, BTS, deleted scenes).
+tags:
+- Exclusion
+conditions:
+- name: Extras keywords
+  type: release_title
+  required: true
+  negate: false
+  pattern: no-extras
+tests: []

@@ -1,7 +1,8 @@
 ---
-name: HEVC / x265
-description: Matches HEVC/x265 releases via regex.
-tags: [Codec]
+name: hevc-x265
+description: Matches HEVC/x265 releases via regex pattern "hevc-x265".
+tags:
+- Codec
 conditions:
 - name: HEVC or x265
   type: release_title

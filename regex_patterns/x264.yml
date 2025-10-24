@@ -1,0 +1,17 @@
+---
+name: x264
+pattern: (?i)\b(x\\s*\\.?\\s*264|AVC)\b
+description: Detects AVC/x264 encodes (used to deprioritize in HEVC-focused profiles).
+tags:
+- Codec
+- Exclusion
+tests:
+- expected: true
+  id: 1
+  input: Interstellar 2014 1080p BluRay x264 DTS-HD MA 5.1
+  matchedContent: x264
+  passes: true
+- expected: false
+  id: 2
+  input: Interstellar 2014 1080p BluRay x265
+  passes: true

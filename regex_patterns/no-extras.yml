@@ -1,0 +1,16 @@
+---
+name: no-extras
+pattern: (?i)\b(extras|featurette|behind[ ._-]?the[ ._-]?scenes|deleted[ ._-]?scenes|bonus)\b
+description: Filters bonus/supplementary content.
+tags:
+- Exclusion
+tests:
+- expected: true
+  id: 1
+  input: The Batman 2022 Extras Featurette - Making of Gotham
+  matchedContent: Extras
+  passes: true
+- expected: false
+  id: 2
+  input: The Batman 2022 1080p WEB-DL x265 SDR DDP 5.1
+  passes: true

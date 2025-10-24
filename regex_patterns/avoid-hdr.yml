@@ -1,5 +1,5 @@
 ---
-name: No HDR
+name: avoid-hdr
 pattern: (?i)(hdr10\+?|dolby[ ._-]?vision|\bdv\b)
 description: Identifies HDR to deprioritize when preferring SDR.
 tags: [HDR, Exclusion]

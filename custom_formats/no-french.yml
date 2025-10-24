@@ -1,0 +1,13 @@
+---
+name: no-french
+description: Deprioritize MULTi/French-tagged releases for English-first libraries.
+tags:
+- Exclusion
+- Language
+conditions:
+- name: French / MULTi
+  type: release_title
+  required: true
+  negate: false
+  pattern: no-french
+tests: []

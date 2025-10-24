@@ -1,0 +1,12 @@
+---
+name: softsubs-preferred
+description: Prefer softsub releases. Uses regex "softsubs-preferred".
+tags:
+- Subtitles
+conditions:
+- name: Softsubs indicator
+  type: release_title
+  required: true
+  negate: false
+  pattern: softsubs-preferred
+tests: []

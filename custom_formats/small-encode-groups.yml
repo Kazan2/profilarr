@@ -1,0 +1,13 @@
+---
+name: small-encode-groups
+description: Prefer compact, efficient encode groups (e.g., PSA, QxR, Tigole). Uses regex "small-encode-groups".
+tags:
+- Group
+- Space Saving
+conditions:
+- name: Small encode groups
+  type: release_title
+  required: true
+  negate: false
+  pattern: small-encode-groups
+tests: []

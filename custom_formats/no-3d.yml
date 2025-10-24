@@ -1,0 +1,13 @@
+---
+name: no-3d
+description: Exclude stereoscopic 3D encodes (SBS/TAB).
+tags:
+- Exclusion
+- Video
+conditions:
+- name: 3D keywords
+  type: release_title
+  required: true
+  negate: false
+  pattern: no-3d
+tests: []

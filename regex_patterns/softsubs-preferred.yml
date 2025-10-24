@@ -1,0 +1,16 @@
+---
+name: softsubs-preferred
+pattern: (?i)\b(soft[-\s]?subs?|softsub|softsubs)\b
+description: Prefer releases with soft subtitles for better muxing/size flexibility.
+tags:
+- Subtitles
+tests:
+- expected: true
+  id: 1
+  input: Your Name 2016 1080p BluRay x265 10bit Dual Audio SoftSubs
+  matchedContent: SoftSubs
+  passes: true
+- expected: false
+  id: 2
+  input: Spirited Away 2001 1080p WEB-DL x265
+  passes: true

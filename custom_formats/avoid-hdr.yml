@@ -1,0 +1,13 @@
+---
+name: avoid-hdr
+description: Deprioritize HDR/DV when preferring SDR. Uses regex "HDR".
+tags:
+- HDR
+- Exclusion
+conditions:
+- name: HDR / DV marker
+  type: release_title
+  required: true
+  negate: false
+  pattern: HDR
+tests: []

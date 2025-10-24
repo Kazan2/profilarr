@@ -1,0 +1,22 @@
+---
+name: small-encode-groups
+pattern: (?i)\b(PSA|QxR|Tigole|VXT|YTS|Galaxy(?:RG|TV)|UTR|Judas|FraMeSToR|SPARKS)\b
+description: Prefer compact, efficient encode groups commonly known for space-saving releases.
+tags:
+- Group
+- Space Saving
+tests:
+- expected: true
+  id: 1
+  input: Dune 2021 1080p BluRay HEVC 10bit DDP 5.1 English - Tigole
+  matchedContent: Tigole
+  passes: true
+- expected: true
+  id: 2
+  input: Oppenheimer 2023 1080p WEB H265 10bit DDP5.1 x265-PSA
+  matchedContent: PSA
+  passes: true
+- expected: false
+  id: 3
+  input: Interstellar 2014 1080p BluRay x265
+  passes: true

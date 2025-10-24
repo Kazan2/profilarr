@@ -1,0 +1,17 @@
+---
+name: no-3d
+pattern: (?i)\b(3D|SBS|HSBS|TAB|HTAB)\b
+description: Filters stereoscopic 3D encodes to avoid them.
+tags:
+- Exclusion
+- Video
+tests:
+- expected: true
+  id: 1
+  input: Avatar 2009 1080p BluRay 3D SBS x265
+  matchedContent: 3D
+  passes: true
+- expected: false
+  id: 2
+  input: Avatar 2009 1080p BluRay x265
+  passes: true

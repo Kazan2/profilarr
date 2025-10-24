@@ -1,0 +1,17 @@
+---
+name: no-french
+pattern: (?i)\b(french|fr|multi)\b
+description: Detects French/MULTi audio tags to deprioritize.
+tags:
+- Exclusion
+- Language
+tests:
+- expected: true
+  id: 1
+  input: Oppenheimer 2023 1080p BluRay HEVC x265 MULTi TrueHD 7.1-FRHD
+  matchedContent: MULTi
+  passes: true
+- expected: false
+  id: 2
+  input: Oppenheimer 2023 1080p BluRay HEVC x265 English TrueHD 7.1
+  passes: true
