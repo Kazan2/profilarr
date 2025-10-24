@@ -1,0 +1,15 @@
+---
+name: hevc-x265
+pattern: (?i)(x\s*\.?\s*265|h\s*\.?\s*265|hevc)
+description: Matches HEVC/x265 encoded releases.
+tags: [Codec]
+tests:
+- expected: true
+  id: 1
+  input: Dune (2021) 1080p BluRay HEVC 10bit DDP 5.1
+  matchedContent: HEVC
+  passes: true
+- expected: false
+  id: 2
+  input: Inception (2010) 1080p BluRay x264
+  passes: true

@@ -1,5 +1,9 @@
+---
 name: Profilarr Database – Austitious Edition
-description: >
-  A public Profilarr v2.4+ repository optimized for space-saving HEVC/x265 encoding and dual-audio anime.
-  Includes TRaSH-Guides naming, soft exclusion filters (3D/HDR/French/German/Extras), and balanced profiles
-  for Radarr and Sonarr.
+description: |
+  Space-saving HEVC/x265 profiles for Radarr & Sonarr with anime dual-audio.
+  Folders:
+    - regex_patterns: raw regex matchers
+    - custom_formats: scoring/filters (conditions schema)
+    - profiles: profile YAMLs referencing CFs
+    - media_management: quality definitions and app-level settings

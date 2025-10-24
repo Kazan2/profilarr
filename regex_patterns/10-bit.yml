@@ -1,0 +1,15 @@
+---
+name: 10-bit
+pattern: (?i)10[-\s]?bit
+description: Detects 10-bit encodes.
+tags: [BitDepth]
+tests:
+- expected: true
+  id: 1
+  input: Dune (2021) 1080p BluRay HEVC 10bit DDP 5.1
+  matchedContent: 10bit
+  passes: true
+- expected: false
+  id: 2
+  input: The Batman (2022) 1080p WEB-DL x265 SDR
+  passes: true

@@ -1,17 +1,13 @@
+---
 name: Profilarr Database – Austitious Edition
 type: database
 schemaVersion: 2
 maintainer: Kazan2
-description: >
-  Profilarr v2.4+ database for Radarr and Sonarr featuring balanced, space-saving HEVC/x265 profiles, dual-audio anime support, and TRaSH-Guides naming. Includes exclusion filters for 3D, HDR, French, German, and Extras.
+description: |
+  Public-friendly Profilarr v2.4+ repository focused on space-saving HEVC/x265
+  for Radarr and Sonarr. Includes anime dual-audio support, soft exclusions,
+  and quality definitions. Flat profiles folder; profiles pull CFs which pull regex.
 applications:
   - radarr
   - sonarr
-tags:
-  - hevc
-  - x265
-  - anime
-  - profilarr
-  - trash-guides
-  - space-saving
-license: GPL-3.0
+tags: [hevc, x265, anime, profilarr, space-saving]

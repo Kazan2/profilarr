@@ -1,0 +1,15 @@
+---
+name: No HDR
+pattern: (?i)(hdr10\+?|dolby[ ._-]?vision|\bdv\b)
+description: Identifies HDR to deprioritize when preferring SDR.
+tags: [HDR, Exclusion]
+tests:
+- expected: true
+  id: 1
+  input: Dune (2021) 4K UHD HDR10+ HEVC Atmos
+  matchedContent: HDR10+
+  passes: true
+- expected: false
+  id: 2
+  input: The Batman (2022) 1080p WEB-DL x265 SDR
+  passes: true

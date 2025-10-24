@@ -1,0 +1,185 @@
+---
+qualityDefinitions:
+  radarr:
+    BR-DISK:
+      min: 60
+      max: 100
+      preferred: 85
+    Bluray-2160p:
+      min: 60
+      max: 100
+      preferred: 85
+    WEBDL-2160p:
+      min: 55
+      max: 95
+      preferred: 80
+    WEBRip-2160p:
+      min: 55
+      max: 95
+      preferred: 80
+    Remux-2160p:
+      min: 65
+      max: 110
+      preferred: 90
+    Bluray-1080p:
+      min: 25
+      max: 50
+      preferred: 38
+    WEBDL-1080p:
+      min: 25
+      max: 45
+      preferred: 35
+    WEBRip-1080p:
+      min: 25
+      max: 45
+      preferred: 35
+    Remux-1080p:
+      min: 30
+      max: 55
+      preferred: 42
+    Bluray-720p:
+      min: 15
+      max: 30
+      preferred: 22
+    WEBDL-720p:
+      min: 15
+      max: 28
+      preferred: 20
+    WEBRip-720p:
+      min: 15
+      max: 28
+      preferred: 20
+    Bluray-480p:
+      min: 7
+      max: 18
+      preferred: 12
+    WEBDL-480p:
+      min: 7
+      max: 18
+      preferred: 12
+    WEBRip-480p:
+      min: 7
+      max: 18
+      preferred: 12
+    SDTV:
+      min: 6
+      max: 15
+      preferred: 10
+    DVD:
+      min: 6
+      max: 12
+      preferred: 9
+    CAM:
+      min: 3
+      max: 7
+      preferred: 5
+    TELECINE:
+      min: 4
+      max: 9
+      preferred: 6
+    TELESYNC:
+      min: 4
+      max: 9
+      preferred: 6
+    WORKPRINT:
+      min: 4
+      max: 9
+      preferred: 6
+    DVDSCR:
+      min: 4
+      max: 9
+      preferred: 6
+    Unknown:
+      min: 10
+      max: 30
+      preferred: 20
+
+  sonarr:
+    Bluray-2160p:
+      min: 55
+      max: 90
+      preferred: 80
+    WEBDL-2160p:
+      min: 50
+      max: 85
+      preferred: 75
+    WEBRip-2160p:
+      min: 50
+      max: 85
+      preferred: 75
+    Remux-2160p:
+      min: 60
+      max: 100
+      preferred: 85
+    Bluray-1080p:
+      min: 20
+      max: 45
+      preferred: 35
+    WEBDL-1080p:
+      min: 20
+      max: 40
+      preferred: 33
+    WEBRip-1080p:
+      min: 20
+      max: 40
+      preferred: 33
+    Remux-1080p:
+      min: 25
+      max: 50
+      preferred: 38
+    Bluray-720p:
+      min: 12
+      max: 25
+      preferred: 18
+    WEBDL-720p:
+      min: 12
+      max: 25
+      preferred: 18
+    WEBRip-720p:
+      min: 12
+      max: 25
+      preferred: 18
+    Bluray-480p:
+      min: 6
+      max: 15
+      preferred: 10
+    WEBDL-480p:
+      min: 6
+      max: 15
+      preferred: 10
+    WEBRip-480p:
+      min: 6
+      max: 15
+      preferred: 10
+    SDTV:
+      min: 5
+      max: 10
+      preferred: 8
+    DVD:
+      min: 5
+      max: 10
+      preferred: 8
+    CAM:
+      min: 3
+      max: 6
+      preferred: 4
+    TELECINE:
+      min: 3
+      max: 6
+      preferred: 4
+    TELESYNC:
+      min: 3
+      max: 6
+      preferred: 4
+    WORKPRINT:
+      min: 3
+      max: 6
+      preferred: 4
+    DVDSCR:
+      min: 3
+      max: 6
+      preferred: 4
+    Unknown:
+      min: 8
+      max: 20
+      preferred: 12

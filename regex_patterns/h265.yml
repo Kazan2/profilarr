@@ -1,0 +1,15 @@
+---
+name: h265
+pattern: (?i)h\s*\.?\s*265
+description: Matches H.265 marker in release titles.
+tags: [Codec]
+tests:
+- expected: true
+  id: 1
+  input: The Batman (2022) 1080p WEB-DL H265 SDR DDP 5.1
+  matchedContent: H265
+  passes: true
+- expected: false
+  id: 2
+  input: Interstellar (2014) 1080p BluRay x264
+  passes: true

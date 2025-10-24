@@ -1,0 +1,15 @@
+---
+name: No German
+pattern: (?i)\b(german|ger|deutsch)\b
+description: Deprioritize German releases for English-first libraries.
+tags: [Language, Exclusion]
+tests:
+- expected: true
+  id: 1
+  input: Interstellar (2014) 1080p BluRay HEVC x265 German DTS 5.1
+  matchedContent: German
+  passes: true
+- expected: false
+  id: 2
+  input: Interstellar (2014) 1080p BluRay HEVC x265 English DTS 5.1
+  passes: true

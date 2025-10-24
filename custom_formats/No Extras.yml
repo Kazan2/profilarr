@@ -1,0 +1,11 @@
+---
+name: No Extras
+description: Exclude extras/featurettes.
+tags: [Exclusion]
+conditions:
+- name: Extras keywords
+  type: release_title
+  required: true
+  negate: false
+  pattern: No Extras
+tests: []
